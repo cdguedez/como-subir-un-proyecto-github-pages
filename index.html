@@ -8,10 +8,26 @@
 </head>
 <body>
     <main>
-        <section>
-            <h1>ESTE ES MI PROYECTOS PARA SUBIR A GITHUB PAGES</h1>
-            <button id="button-alert">Probar alerta</button>
+        <h1>Plantilla para chat</h1>
+        <section id="chat-area">
+            <li class="message user">
+                <span class="you">YOU</span>
+                <p>Vean el contenido del archivo CSS</p>
+            </li>
+            <li class="message user">
+                <span class="you">YOU</span>
+                <p>les deje comentario en algunos atributos.</p>
+            </li>
+            <li class="message chat">
+                <span class="you">BOT</span>
+                <p>Gracias!!</p>
+            </li>
         </section>
+        <form id="form"  class="send-area">
+            <input type="text" id="input-text" name="message" placeholder="Escribe algo">
+            <button type="submit">Enviar</button>
+        </form>
+
     </main>
 
     <script src="./js/main.js"></script>

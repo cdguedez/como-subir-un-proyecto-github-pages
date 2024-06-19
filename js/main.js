@@ -1,5 +1,11 @@
-const buttonAlert = document.querySelector('#button-alert');
+const formulario = document.getElementById('form')
 
-buttonAlert.addEventListener('click', () => {
-    alert('Hola Mundo!!');
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const formData = new FormData(formulario)
+    const data = {
+        message: formData.get('message')
+    }
+    console.log(data)
+    formulario.reset()
 })
